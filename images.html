@@ -1,0 +1,111 @@
+<!--
+Imagenes:
+    Mapas de bits
+        -bmp: bitmaps
+        -jpg -> más usados
+        -gif ->
+        -png -> más usados
+        -webp -> 
+        -----------------------------------------
+        gimp
+        photoshop
+        adobe illustrator
+        corel draw suite
+
+    Vectoriales
+        -svg -> scalable vector graphics
+        ----------------------------------------
+        inkscape
+        corel draw
+        
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes</title>
+</head>
+<body>
+    <h1>Imágenes en HTML</h1>
+    <img src="imgs/profile.jpg" alt="Selfie">
+    <br>
+    <img src="https://placehold.co/1024X640" alt="Logo de Perfil">
+    <picture>
+        <source srcset="https://placehold.co/380X380" media="(max-width:719px)">
+        <source srcset="https://placehold.co/780X480" media="(max-width:1023px)"> 
+        <img src="https://placehold.co/1024X720" alt="Imágen responsiva">
+    </picture>
+
+    <picture>
+        <source srcset="https://placehold.co/1024X720/red/000" media="(min-width:1024px)">
+        <source srcset="https://placehold.co/780X480/red/000" media="(min-width:720px)"> 
+        <img src="https://placehold.co/380X380/red/000" alt="Imágen responsiva">
+    </picture>
+
+    <figure>
+        <picture>
+            <source srcset="https://placehold.co/1024X720/blue/000" media="(min-width:1024px)">
+            <source srcset="https://placehold.co/780X480/blue/000" media="(min-width:720px)"> 
+            <img src="https://placehold.co/380X380/blue/000" alt="Imágen responsiva">
+        </picture>
+        <figcaption>
+            Mantarraya: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis vel repellat minus aut est quos distinctio, quas explicabo tempora repudiandae cumque tenetur, cupiditate magni repellendus optio voluptatibus voluptatum molestiae facilis!
+        </figcaption>
+    </figure>
+
+    <img src="imgs/threedots.svg" alt="Imágen vectorial">
+
+    <br/>
+
+    <svg
+   width="300"
+   height="300"
+   viewBox="0 0 79.375 79.374999"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="threedots.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="fill:#000000;stroke-width:0.82954"
+       id="path1"
+       cx="41.117542"
+       cy="40.871819"
+       rx="25.391312"
+       ry="23.671253" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.82954"
+       id="path2"
+       cx="41.894817"
+       cy="40.871822"
+       rx="12.177464"
+       ry="10.435714" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.82954"
+       id="path3"
+       cx="41.894829"
+       cy="41.126354"
+       rx="2.850045"
+       ry="9.6721258" />
+    <ellipse
+       style="fill:#ff0000;fill-opacity:1;stroke-width:0.82954"
+       id="path4"
+       cx="41.376637"
+       cy="41.126354"
+       rx="2.850045"
+       ry="9.1630659" />
+  </g>
+</svg>
+
+</body>
+</html>
