@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Préstamo Estudiantil</title>
+</head>
+<body>
+    <h1>Solicitar Préstamo Estudiantil</h1>
+    <form action="solicitud_prestamo.html" method="get">
+        <label for="txtNombre">Nombre completo:</label>
+        <input type="text" name="nombre" id="txtNombre" placeholder="Nombres y apellidos">
+        <br>
+        <label for="txtCorreo">Correo electrónico:</label>
+        <input type="email" name="corre" id="txtCorreo" placeholder="tucorreo@electro.ico">
+        <br>
+        <label for="txtTelefono">Número de teléfono:</label>
+        <input type="text" name="telefono" id="txtTelefono" placeholder="****-****">
+        <br>
+        <label for="txtDireccion">Dirección:</label>
+        <input type="text" name="direccion" id="txtDireccion">
+        <br>
+        <label for="txtCiudad">Ciudad:</label>
+        <input type="text" name="ciudad" id="txtCiudad">
+        <br>
+        <label for="cmbEstado">Estado:</label>
+        <select name="estado" id="cmbEstado">
+            <option value="1">a</option>
+            <option value="2">b</option>
+            <option value="3">c</option>
+            <option value="4">d</option>
+        </select>
+        <br>
+        <label for="txtCodPostal">Código postal:</label>
+        <input type="text" name="codPostal" id="txtCodPostal">
+        <br>
+        <label for="rdbEducación">Nivel de educación actual:</label>
+        <input type="radio" name="rdbEducación" id="opcPreparatoria" value="Preparatoria">
+        <label for="opcPreparatoria">Preparatoria</label>
+        <input type="radio" name="rdbEducación" id="opcLicenciatura" value="Licenciatura">
+        <label for="opcLicenciatura">Licenciatura</label>
+        <input type="radio" name="rdbEducación" id="opcMaestría" value="Maestría">
+        <label for="opcMaestría">Maestría</label>
+        <input type="radio" name="rdbEducación" id="opcDoctorado" value="Doctorado">
+        <label for="opcDoctorado">Doctorado</label>
+        <br>
+        <label for="rdbPrograma">Programa de estudio:</label>
+        <input type="radio" name="rdbComputación" id="opcComputación" value="Computación">
+        <label for="opcComputación">Ciencias de la Computación</label>
+        <input type="radio" name="rdbIngeniería" id="opcIngeniería" value="Ingeniería">
+        <label for="opcIngeniería">Ingeniería</label>
+        <input type="radio" name="rdbEducación" id="opcMaestría" value="Maestría">
+        <label for="opcMaestría">Maestría</label>
+        <input type="radio" name="rdbEducación" id="opcDoctorado" value="Doctorado">
+        <label for="opcDoctorado">Doctorado</label>
+        <br>
+        <button type="submit">Enviar</button>
+        </form>
+</body>
+</html>
