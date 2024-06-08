@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conferencia sobre la Educación Actual</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <h1>Conferencia sobre la Educación Actual</h1>
+            <p>La Conferencia sobre la Educación Actual ofrece un espacio vital para discutir los desafíos y oportunidades que enfrenta el sistema educativo contemporáneo. Este evento reúne a expertos, académicos, profesionales de la educación y líderes de pensamiento para explorar las tendencias actuales, compartir mejores prácticas y colaborar en la búsqueda de soluciones innovadoras para mejorar la calidad y la equidad en la educación. Desde el impacto de la tecnología hasta las estrategias pedagógicas emergentes, esta conferencia proporciona una plataforma integral para reflexionar sobre el estado actual y el futuro de la educación.</p>
+        </header>
+        <main>
+            <section>
+                <h2>El papel de la tecnología en la educación</h2>
+                <p>En un mundo cada vez más digitalizado, la integración efectiva de la tecnología en el aula es crucial. Los ponentes analizarán cómo las herramientas tecnológicas pueden mejorar la experiencia de aprendizaje, aumentar la participación de los estudiantes y fomentar la creatividad. Además, se examinarán los desafíos relacionados con la brecha digital y se discutirán estrategias para garantizar que todos los estudiantes tengan acceso equitativo a la tecnología educativa.</p>
+            </section>
+            <section>
+                <h2>Enfoques innovadores para la enseñanza y el aprendizaje</h2>        
+                <p>La conferencia también destacará métodos pedagógicos innovadores que están transformando la educación. Desde el aprendizaje basado en proyectos hasta el enfoque de educación personalizada, los expertos compartirán investigaciones y experiencias prácticas sobre cómo estos enfoques pueden mejorar el compromiso de los estudiantes, promover el pensamiento crítico y desarrollar habilidades del siglo XXI, como la colaboración y la resolución de problemas.</p>
+            </section>
+            <section>
+                <h2>Equidad y diversidad en la educación</h2>
+                <p>Uno de los temas centrales de la conferencia será la búsqueda de una educación más equitativa e inclusiva. Se discutirá cómo abordar las disparidades en el acceso a la educación, así como los desafíos relacionados con la representación y el respeto a la diversidad cultural en el currículo y en el entorno escolar. Los ponentes compartirán estrategias efectivas para crear entornos educativos que celebren la diversidad y apoyen el éxito de todos los estudiantes, independientemente de su origen socioeconómico, cultural o de otro tipo.</p>
+            </section>
+            <br>
+            <section>
+                <form method="get">
+                    <fieldset>
+                        <legend><strong>Encuesta de opinión</strong></legend>
+                        <label for="txtNombre">Nombre: </label>
+                        <input type="text" id="txtNombre" name="nombre">
+                        <br>
+                        <label for="txtCorreo">Correo electrónico: </label>
+                        <input type="email" id="txtCorreo" name="correo" placeholder="tucorreo@electron.ico">
+                        <br>
+                        <label for="txtEdad">Edad: </label>
+                        <input type="number" id="txtEdad" name="edad">
+                        <br>
+                        <label for="txtOcupacion">Ocupación: </label>
+                        <input type="text" id="txtOcupacion" name="ocupacion">
+                        <br>
+
+                        <label for="cmbEducacion">Nivel educativo: </label>
+                        <select name="educacion" id="cmbEducacion" >
+                            <option value="1">Sin formación</option>
+                            <option value="2">Primaria</option>
+                            <option value="3">Secundaria</option>
+                            <option value="4" selected>Educación Superior</option>
+                            <option value="5">Posgrado</option>
+                        </select>
+                        <br>
+
+                        <label for="txtOpinion">Su opinión</label>
+                        <br>
+                        <textarea name="opinion" id="txtOpinion" cols="60" rows="5"></textarea>
+                    </fieldset>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
