@@ -6,8 +6,10 @@
     <title>Solicitar Préstamo Estudiantil</title>
 </head>
 <body>
-    <h1>Solicitar Préstamo Estudiantil</h1>
+    <h1>Solicitud de Préstamo Estudiantil</h1>
     <form action="solicitud_prestamo.html" method="get">
+        <fieldset>
+        <legend>Datos Personales</legend>
         <label for="txtNombre">Nombre completo:</label>
         <input type="text" name="nombre" id="txtNombre" placeholder="Nombres y apellidos">
         <br>
@@ -25,10 +27,24 @@
         <br>
         <label for="cmbEstado">Estado:</label>
         <select name="estado" id="cmbEstado">
-            <option value="1">a</option>
-            <option value="2">b</option>
-            <option value="3">c</option>
-            <option value="4">d</option>
+            <option value="1">Atlántida</option>
+            <option value="2">Choluteca</option>
+            <option value="3">Colón</option>
+            <option value="4">Comayagua</option>
+            <option value="5">Copán</option>
+            <option value="6">Cortés</option>
+            <option value="7">El Paraíso</option>
+            <option value="8">Francisco Morazán</option>
+            <option value="9">Gracias a Dios</option>
+            <option value="10">Intibucá</option>
+            <option value="11">Islas de la Bahía</option>
+            <option value="12">La Paz</option>
+            <option value="13">Lempira</option>
+            <option value="14">Ocotepeque</option>
+            <option value="15">Olancho</option>
+            <option value="16">Santa Bárbara</option>
+            <option value="17">Valle</option>
+            <option value="18">Yoro</option>
         </select>
         <br>
         <label for="txtCodPostal">Código postal:</label>
@@ -45,16 +61,29 @@
         <label for="opcDoctorado">Doctorado</label>
         <br>
         <label for="rdbPrograma">Programa de estudio:</label>
-        <input type="radio" name="rdbComputación" id="opcComputación" value="Computación">
+        <input type="radio" name="rdbPrograma" id="opcComputación" value="Computación">
         <label for="opcComputación">Ciencias de la Computación</label>
-        <input type="radio" name="rdbIngeniería" id="opcIngeniería" value="Ingeniería">
+        <input type="radio" name="rdbPrograma" id="opcIngeniería" value="Ingeniería">
         <label for="opcIngeniería">Ingeniería</label>
-        <input type="radio" name="rdbEducación" id="opcMaestría" value="Maestría">
-        <label for="opcMaestría">Maestría</label>
-        <input type="radio" name="rdbEducación" id="opcDoctorado" value="Doctorado">
-        <label for="opcDoctorado">Doctorado</label>
+        <input type="radio" name="rdbPrograma" id="opcEconomía" value="Economía">
+        <label for="opcEconomía">Economía</label>
+        <input type="radio" name="rdbPrograma" id="opcArtes" value="Artes">
+        <label for="opcArtes">Artes</label>
+        <input type="radio" name="rdbPrograma" id="opcOtro" value="Otro">
+        <label for="opcOtro">Otro</label>
+        </fieldset>
         <br>
-        <button type="submit">Enviar</button>
+        <fieldset>
+        <legend>Datos del Préstamo</legend>    
+        <label for="txtMonto">Monto del préstamo a solicitar:</label>
+        <input type="text" name="monto" id="txtMonto">
+        <br>
+        <label for="txtRazon">Razón para solicitar el préstamo</label>
+        <br>
+        <textarea name="razon" id="txtRazon" cols="80" rows="6"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Enviar solicitud</button>
         </form>
 </body>
 </html>
