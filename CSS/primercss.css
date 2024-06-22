@@ -1,113 +1,322 @@
-/* CSS Cascade Style Sheet
+/* CSS  Cascade Style Sheet
 
 >---| Css Externos
-    | Css Externos
-    | Css Externos
+    | Css Style Block
+    | Css Inline
+    |---->   html
+
 
 */
-*{
+
+* {
     box-sizing: border-box;
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 
-body{
+body {
     margin: 0px;
     padding: 0px;
-
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
     background-color: #000000;
-    color: white;
+    color: #FFF;
+}
+@media (min-width:480px) {
+    header {
+        flex-direction: row;
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        z-index: 1001;
+    }
+    main {
+        margin-top: 66px;
+    }
 }
 
 header h1{
     margin: 0rem 0.5rem;
 }
 
-header div{
+header div {
     display: flex;
     align-items: center;
 }
 
-header div img{
+header div img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin: 0.5rem;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
-    margin: 0px;
-    padding: 0px;
+    margin:0px;
+    padding:0px;
 }
-
-header nav ul li a{
+header nav ul li a {
     display: inline-block;
-    color: antiquewhite;
+    color:#FFF;
     text-decoration: none;
-    /*background-color: #555;*/
-    padding: 0.8rem 1rem;
+    padding:0.8rem 1rem;
+    transition: background-color 0.5s ease;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     background-color: #555;
 }
 
-h2{
+.container {
+    padding: 0.5rem;
+}
+
+h2 {
     text-decoration: underline;
 }
 
 .precios {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-
-.card{
-    margin: 0.5rem;
+.card {
     display: flex;
     flex-direction: column;
+    margin: 0.5rem;
     padding: 0;
     border: 1px solid #000;
-    max-width: 280px;
-    min-width: 280px;
+    max-width: 200px;
+    min-width: 200px;
     min-height: 300px;
-    box-shadow: 3px 3px 5px black;
+    box-shadow: 3px 3px 5px #000;
+    background-color: #fff;
+    transition: transform 0.7s ease-in-out;
 }
 
 .card h3{
-    margin: 0px;
-    background-color: rgba(255, 213, 0, 0.878);
-    color: #333;
+    margin:0px;
+    background-color: darkolivegreen;
+    color: #ccc;
     padding: 0.5rem;
 }
 
-.card p{
+.card p {
     flex: 1 0 auto;
-    padding: 0.5rem;
-    font-size: 0.8rem;
-    color:black;
-}
 
-.card span{
-    display:  block;
+    padding:0.5rem;
+    font-size: 0.8rem;
+    color:#000;
+
+}
+.card span {
+    display: block;
     text-align: right;
     padding: 0.5rem;
     font-size: 1.1rem;
     font-weight: bold;
 }
 
-.card form button{
-    display: block;
-    width: 100%;
-    background-color: rgba(255, 213, 0, 0.878);
-    color: #333;
+.precios .card:hover {
+    transform: scale(120%);
+    z-index:1000;
+}
+
+
+.p-4 {
+    padding:1rem;
+}
+.p-2 {
     padding: 0.5rem;
+}
+
+fieldset {
+    border:none;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+}
+
+button {
+    border-radius: 17px;
+    background-color: #999;
+    font-weight: bold;
+    border: 1px solid #777;
+    padding: 0.5rem 0.75rem;
+}
+
+.card form button {
+    display: block;
+    width: calc(100% - 2rem);
+    padding: 0.5rem;
+    background-color: darkolivegreen;
+    color: #FFF;
     border: none;
     cursor: pointer;
+    margin:1rem;
+}
+
+.hero {
+    position:relative;
+    background-color: #999;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.hero img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero .hero-content{
+    position:absolute;
+    width: 300px;
+    top:calc(50% - 150px);
+    left:calc(50% - 150px);
+    color:#fff;
+}
+
+.hero .hero-content h2 {
+    font-size: 2.5rem;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hero .hero-content h2 {
+    display:inline-block;
+    font-size: 2.5rem;
+    text-decoration: none;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    /*
+    trouble  TRBL - Top Right Bottom Left
+    */
+    /*padding: 1rem 0.5rem 2rem 3rem;*/
+    /*padding: 1rem 2rem;*/
+    /*padding: 1rem;*/
+}
+
+.hero .hero-content p {
+    line-height: 2;
+}
+
+.hero .hero-content button {
+    font-size: 1.1rem;
+    display:inline-block;
+    padding: 0.5rem 2rem;
+    background-color: dodgerblue;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 27px;
+}
+
+footer {
+    background-color: #000;
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer span {
+    text-align: center;
+    font-weight: bold;
+}
+
+footer nav ul, footer .footer-redes ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin:0px;
+    padding:0px;
+    text-align: center;
+}
+footer nav ul li a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color:#fff;
+    font-size: 0.8rem;
+}
+
+
+article {
+    max-width: 1024;
+    padding:1rem;
+    background-color: #0F0;
+}
+article p {
+    line-height: 1.5;
+    font-size: 1rem;
+    font-style: normal;
+    text-decoration: none;
+    text-align: justify;
+}
+article h2 {
+    color: #ff0;
+    text-shadow: 1px 1px 2px #000;
+}
+
+@media (min-width:760px) {
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .footer-content {
+        flex: 1 0 100%;
+    }
+    .footer-nav , .footer-redes {
+        flex: 1 0 50%;
+    }
+}
+
+@media (min-width:1025px) {
+    .container {
+        max-width: 1200px;
+        margin: 1rem auto;
+    }
+    footer, header {
+        padding-left: calc((100vw - 1200px) /2 );
+        padding-right: calc((100vw - 1200px) /2 );
+    }
+    .footer-content {
+        flex: 1 0 60%;
+    }
+    .footer-nav , .footer-redes {
+        flex: 1 0 20%;
+        align-self: flex-start;
+    }
+}
+
+.fullimage img {
+    display: inline-block;
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    padding: 0px;
+    margin: 0px;
 }
