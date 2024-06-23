@@ -75,11 +75,19 @@ header nav ul li a:hover {
     background-color: #555;
 }
 
+<<<<<<< HEAD
 .container {
     padding: 0.5rem;
 }
 
 h2 {
+=======
+.container{
+    padding: 0.5rem;
+}
+
+h2{
+>>>>>>> 0b3e864b2a31766d1a96ac4e908c79268ec88809
     text-decoration: underline;
 }
 
@@ -89,7 +97,12 @@ h2 {
     flex-wrap: wrap;
 }
 
+<<<<<<< HEAD
 .card {
+=======
+.card{
+    margin: 0.5rem;
+>>>>>>> 0b3e864b2a31766d1a96ac4e908c79268ec88809
     display: flex;
     flex-direction: column;
     margin: 0.5rem;
@@ -167,11 +180,18 @@ button {
     color: #FFF;
     border: none;
     cursor: pointer;
+<<<<<<< HEAD
     margin:1rem;
 }
 
 .hero {
     position:relative;
+=======
+}
+
+.hero{
+    position: relative;
+>>>>>>> 0b3e864b2a31766d1a96ac4e908c79268ec88809
     background-color: #999;
     height: 85vh;
     overflow: hidden;
@@ -181,13 +201,18 @@ button {
     position: absolute;
     top: 0;
     left: 0;
+<<<<<<< HEAD
     display:block;
+=======
+    display: block;
+>>>>>>> 0b3e864b2a31766d1a96ac4e908c79268ec88809
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+<<<<<<< HEAD
 .hero .hero-content{
     position:absolute;
     width: 300px;
@@ -205,10 +230,24 @@ button {
 
 .hero .hero-content h2 {
     display:inline-block;
+=======
+
+.hero .hero-content{
+    position: absolute;
+    width: 300px;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    color: white;
+}
+
+.hero .hero-content h2{
+    display: inline-block;
+>>>>>>> 0b3e864b2a31766d1a96ac4e908c79268ec88809
     font-size: 2.5rem;
     text-decoration: none;
     margin: 0;
     margin-bottom: 1.5rem;
+<<<<<<< HEAD
     /*
     trouble  TRBL - Top Right Bottom Left
     */
@@ -224,10 +263,21 @@ button {
 .hero .hero-content button {
     font-size: 1.1rem;
     display:inline-block;
+=======
+}
+
+.hero .hero-content p{
+    line-height: 2;
+}
+
+.hero .hero-content button{
+    display: inline-block;
+>>>>>>> 0b3e864b2a31766d1a96ac4e908c79268ec88809
     padding: 0.5rem 2rem;
     background-color: dodgerblue;
     color: #333;
     border: 1px solid #333;
+<<<<<<< HEAD
     border-radius: 27px;
 }
 
@@ -235,17 +285,33 @@ footer {
     background-color: #000;
     color:#fff;
     display:flex;
+=======
+    font-size: 1.1rem;
+    border-radius: 27px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    display: flex;
+>>>>>>> 0b3e864b2a31766d1a96ac4e908c79268ec88809
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+<<<<<<< HEAD
 footer span {
+=======
+footer span{
+>>>>>>> 0b3e864b2a31766d1a96ac4e908c79268ec88809
     text-align: center;
     font-weight: bold;
 }
 
+<<<<<<< HEAD
 footer nav ul, footer .footer-redes ul {
     display: flex;
     flex-direction: column;
@@ -289,10 +355,39 @@ article h2 {
         flex: 1 0 100%;
     }
     .footer-nav , .footer-redes {
+=======
+footer nav ul,.footer-redes ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer-nav nav ul li a{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
+
+@media (min-width:760px){
+    footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .footer-content{
+        flex: 1 0 100%;
+    }
+    .footer-nav,.footer-redes{
+>>>>>>> 0b3e864b2a31766d1a96ac4e908c79268ec88809
         flex: 1 0 50%;
     }
 }
 
+<<<<<<< HEAD
 @media (min-width:1025px) {
     .container {
         max-width: 1200px;
@@ -319,4 +414,25 @@ article h2 {
     object-position: center center;
     padding: 0px;
     margin: 0px;
+=======
+@media (min-width:1025px){
+    .container{
+        max-width: 1200px;
+        margin: 1rem auto;
+    }
+    /*.precios{
+        justify-content: space-around;
+    }*/
+    footer{
+        padding-left: calc(50vw - 600px);
+        padding-right: calc(50vw - 600px);
+    }
+    .footer-content{
+        flex: 1 0 60%;
+    }
+    .footer-nav,.footer-redes{
+        flex: 1 0 20%;
+        align-self: flex-start;
+    }
+>>>>>>> 0b3e864b2a31766d1a96ac4e908c79268ec88809
 }
