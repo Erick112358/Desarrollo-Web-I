@@ -1,0 +1,133 @@
+body{
+    background-color: rgba(0,0,0, 0.75);
+}
+.atomo{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nucleo{
+    position: absolute;
+    z-index: 100;
+    width: 36px;
+    height: 36px;
+    background-color: rgb(32, 125, 206);
+    border-radius: 50%;
+}
+
+.electron{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: girar 2s ease-in-out infinite;
+}
+
+.electron:nth-child(2){
+    animation-delay: 333.333333ms;
+}
+
+.electron:nth-child(3){
+    animation-delay: 2666.666666ms;
+}
+
+.electron .e{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.electron .e{
+    animation: linea1 1s ease-in-out infinite;
+}
+
+.electron:nth-child(2) .e{
+    animation: linea2 1s ease-in-out infinite;
+    animation-delay: 333.333333ms;
+}
+
+.electron:nth-child(3) .e{
+    animation: linea3 1s ease-in-out infinite;
+    animation-delay: 2666.666666ms;
+}
+
+
+@keyframes girar {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        z-index: 80;
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        z-index: 120;
+    }
+    100%{
+        transform: rotate(360deg);
+        z-index: 80;
+    }
+}
+
+@keyframes linea1 {
+    0%{
+        transform: translateY(64px);
+    }
+    50%{
+        transform: translateY(24px);
+    }
+    100%{
+        transform: translateY(64px);
+    }
+}
+
+@keyframes linea2 {
+    0%{
+        transform: translate(-55.4256px,-32px);
+    }
+    50%{
+        transform: translate(-20.7846px,-12px);
+    }
+    100%{
+        transform: translate(-55.4256px,-32px);
+    }
+}
+
+@keyframes linea3 {
+    0%{
+        transform: translate(55.4256px,-32px);
+    }
+    50%{
+        transform: translate(20.7846px,-12px);
+    }
+    100%{
+        transform: translate(55.4256px,-32px);
+    }
+}
+
+.curva1,.curva2,.curva3{
+    position: absolute;
+    width: 48px;
+    height: 128px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: red;
+    border-radius: 50%;
+}
+
+
+.curva2{
+    transform: rotate(120deg);
+}
+
+.curva3{
+    transform: rotate(240deg);
+}
+
