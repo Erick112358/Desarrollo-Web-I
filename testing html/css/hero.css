@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.hero-panel{
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.hero-panel img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-panel .hero-content{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+}

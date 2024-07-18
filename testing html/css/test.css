@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.carrusel{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 1080px;
+    height: 480px;
+    overflow:hidden;
+}
+
+.carrusel .imagenes{
+    display: flex;
+    position: absolute;
+    animation: carrusel infinite 10s ease-in-out;
+}
+
+
+.carrusel .imagenes img{
+    object-fit: cover;
+    width: 1080px;
+    height: 480px;
+}
+
+@keyframes carrusel{
+    0%{
+        left: 0px;
+    }
+    33%{
+        left: -1080px;
+    }
+    67%{
+        left: -2160px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
