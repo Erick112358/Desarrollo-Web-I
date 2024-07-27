@@ -15,6 +15,10 @@ header{
     text-align: center;
 }
 
+main{
+    overflow: hidden;
+}
+
 section[class*='bloque']{
     width: 100vw;
     display: flex;
@@ -35,8 +39,11 @@ section[class*='bloque']{
 
 @media(min-width:710px) {
     .periodo{
-        width: 1.5rem;
+        width: 100px;
         padding: 0px;
+    }
+    .clase{
+        margin: 0px;
     }
 }
 
@@ -44,7 +51,7 @@ section[class*='bloque']{
     width: 200px;
     height: 100px;
     border: solid black 2px;
-    border-top: solid blue 10px;
+    border-top: solid rgb(0, 0, 255) 10px;
     border-radius: 10px;
     background-color: white;
     cursor: pointer;
@@ -52,6 +59,8 @@ section[class*='bloque']{
     justify-content: center;
     align-items: center;
     transition: background-color .3s ease-in-out;
+    transition: border-top-color .5s ease-in-out;
+    margin: 5px;
 }
 
 .clase:hover{
@@ -60,15 +69,35 @@ section[class*='bloque']{
 
 .requerimientos{
     width: 100vw;
-    height: 200px;
-    background-color: black;
-    color: white;
+    height: 250px;
+    background-color: rgba(255,255, 255, .95);
+    color: black;
     font-size: xx-large;
     position: fixed;
-    top: 50%;
+    top: 100%;
     left: 0px;
+    transform: translateY(-100%);
+    transition: transform .2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
+.requerimientos .abre,.requerimientos .requiere{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
 .hidden{
+    transform: translateY(0px);
+}
+
+input{
     display: none;
+}
+
+input:checked~div{
+    border-top-color: green;
 }
