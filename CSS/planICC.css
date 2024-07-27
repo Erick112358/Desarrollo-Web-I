@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto",sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1{
+}
+
+section[class*='bloque']{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(219, 219, 219);
+    border: dashed 1px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.periodo{
+    font-weight: bold;
+    width: 200px;
+    padding-bottom: 1rem;
+}
+
+@media(min-width:710px) {
+    .periodo{
+        width: 1.5rem;
+        padding: 0px;
+    }
+}
+
+.clase{
+    width: 200px;
+    height: 100px;
+    border: solid black 2px;
+    border-top: solid blue 10px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .3s ease-in-out;
+}
+
+.clase:hover{
+    background-color: rgb(194, 194, 194);
+}
+
+.requerimientos{
+    width: 100vw;
+    height: 200px;
+    background-color: black;
+    color: white;
+    font-size: xx-large;
+    position: fixed;
+    top: 50%;
+    left: 0px;
+}
+
+.hidden{
+    display: none;
+}
